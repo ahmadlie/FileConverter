@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title text-center">File Converter</h1>
+                <div class="custom-file mb-3">
+                    <input type="file" class="custom-file-input" id="fileInput">
+                    <label class="custom-file-label" for="fileInput">Choose file</label>
+                </div>
+                <select class="custom-select mb-3" id="convertType">
+                    <option value="pdf">PDF</option>
+                    <option value="docx">DOCX</option>
+                    <option value="jpg">JPG</option>
+                </select>
+                <button class="btn btn-primary btn-block" onclick="convertFile()">Convert</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
